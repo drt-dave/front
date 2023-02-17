@@ -7,14 +7,14 @@ import { BrowserRouter as Router,
 
 import PrivateRoute from '../auth/privateroute';
 import Login from "../login/login"
-import eventos from '../eventos/eventos.buscar';
+import Eventos from '../eventos/eventos.buscar';
 
 export default function AppRouter(){
   return(
     <Router>
       <Switch>
 	<Route exact path={["/front", "/login"]} component={Login}/>
-	<PrivateRoute exact path="/eventos" component={eventos}/>
+	<PrivateRoute exact path="/eventos" component={Eventos}/>
 	<Route 
 	  path={["*"]} 
 	  component={() => (
