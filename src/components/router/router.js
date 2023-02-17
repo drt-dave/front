@@ -13,7 +13,7 @@ export default function AppRouter(){
   return(
     <Router>
       <Switch>
-	<Route exact path={["/", "/login"]} component={Login}/>
+	<Route exact path={["/front", "/login"]} component={Login}/>
 	<PrivateRoute exact path="/eventos" component={eventos}/>
 	<Route 
 	  path={["*"]} 
